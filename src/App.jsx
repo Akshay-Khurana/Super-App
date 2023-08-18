@@ -1,15 +1,25 @@
 import LeftImg from "./Components/LeftImg";
 import Form from "./Components/Form";
 import "./App.css";
+import {BrowserRouter,Routes, Route} from 'react-router-dom';
+import Category from "./Components/Category";
+import RegistrationPage from "./Components/RegistrationPage";
+
 
 function App() {
 
   return (
+
+      
     <>
-      <LeftImg></LeftImg>
-      <Form ></Form>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<RegistrationPage />}></Route>
+        <Route path = "category" element={<Category />}></Route>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
 
-export default App
+export default App;
