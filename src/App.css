@@ -120,3 +120,130 @@
     margin-top:10px;
 
 }
+
+/* Category CSS */
+
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+
+.category-main-container{
+    height: 100%;
+}
+
+.category-container{
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+    width: 36vw;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    
+}
+
+.card-category-container{
+    display: flex;
+    width:125px;
+    height: 125px;
+    margin:10px;
+    background-color: rgb(194, 166, 166);
+    flex-direction: column;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    top:8vh;
+    border : 2px solid transparent;
+}
+
+.category-heading{
+    margin:5px;
+    color:white;
+
+}
+
+.category-img {
+    width:108px;
+    height: 75px;
+    margin:8px;
+    border-radius: 5px;
+}
+
+.card-selected{
+    border:solid #72DB73;
+}
+
+.left-category-section{
+    display: flex;
+    float: left;
+    width:38vw;
+    height:80vh;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.left-category-heading {
+    color:#72DB73;
+    position: relative;
+    width: 66vh;
+    top:12vh; 
+    margin-left: 2rem;
+}
+
+.left-category-para{
+    color: white;
+    width: 66vh;
+    position: relative;
+    top: 18vh;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 4rem;
+    margin-left: 2rem;
+
+}
+
+.selected-cards{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    width:30vw;
+    position: relative;
+    top: 20vh;
+}
+
+
+.selected-cards > p{
+    background-color: #09610b;
+    margin:5px;
+    padding: 0.5rem;
+    width:80px;
+    border-radius: 100px;
+}
+
+.whole-container{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+
+.next-page{
+    background-color: green;
+    height: 20px;
+    width:100px;
+    border:none;
+    border-radius:100px;
+    margin-right: 20px;
+    margin-top:20px;
+}
+
+.card-length-error{
+    color:red;
+    margin-left:3rem;
+}
+
+
